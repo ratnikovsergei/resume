@@ -4,78 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, html, css, front-end">
+    <link rel="stylesheet" href="styles.css">
     <title>Sergei Resume</title>
 </head>
 <body>
-    <h1>Ратников Сергей</h1>
 
-    <img src="avatar.JPG" width="250"  alt="здесь мое фото">
+    <div class="container">    
+        <div class="info">
+            <img src="avatar.JPG" alt="здесь мое фото" class="avatar">
 
-    <br>
-    
-    <a href="https://vk.com/avallon795" target="_blank">Я Вконтакте</a>
+            <div class="info-text">
+                <h1>Ратников Сергей</h1>
 
-    <p>Будущий <strong>front-end</strong> разработчик :)</p> 
-    <p>Люблю <em>заниматься спортом, изучать что-то новое для себя, а также путешествовать</em></p>
+                 <p>Будущий <strong>front-end</strong> разработчик :)</p> 
+                <p>Люблю <em>заниматься спортом, изучать что-то новое для себя, а также путешествовать</em></p>
+                    
+                <h4>Ссылочка на соц. сети</h4>
+                <a href="https://vk.com/avallon795" target="_blank">Вконтакте</a>
+                <a href="https://t.me/ratnikov_sergei" target="_blank">Telegram</a>
+            </div>
+        </div>   
+        
+        
+        <div class="card hobby">
+            <h2>Мои хобби</h2>
 
-    <h2>Мои хобби</h2>
-
-    <ul>
-        <li>Путешествия</li>
-        <li>Фитнес</li>
-        <li>Вкусная еда</li>
-        <li>Книги</li>
-    </ul>
-
-    <h3>Опыт работы</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Место работы</th>
-                <th>Должность</th>
-                <th>Период</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>МФЦ</td>
-                <td>Специалист приема</td>
-                <td>2018-2019</td>
-            </tr>
-
-            <tr>
-                <td>Банк</td>
-                <td>Кредитный специалист</td>
-                <td>2019-2022</td>
-            </tr>
-
-            <tr>
-                <td>Билайн</td>
-                <td>Специалист поддержки</td>
-                <td>2022-2024</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            <ul class="myhobby">
+                <li>Путешествия</li>
+                <li>Фитнес</li>
+                <li>Вкусная еда</li>
+                <li>Книги</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card job">
+            <h3>Опыт работы</h3>
+            <table class="tablejob">
+                <thead>
+                    <tr>
+                        <th>Место работы</th>
+                        <th>Должность</th>
+                        <th>Период</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>МФЦ</td>
+                        <td>Специалист приема</td>
+                        <td>2018-2019</td>
+                    </tr>
+
+                    <tr>
+                        <td>Банк</td>
+                        <td>Кредитный специалист</td>
+                        <td>2019-2022</td>
+                    </tr>
+
+                    <tr>
+                        <td>Билайн</td>
+                        <td>Специалист поддержки</td>
+                        <td>2022-2024</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="6" placeholder="Введите сообщение..."></textarea>
-        </div>
-    </form>
+        
 
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="25" rows="6" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <p>
+                <button class="btn">Отправить</button>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
